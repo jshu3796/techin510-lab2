@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import numpy as np
+np.random.seed(42)
 
 st.set_page_config(
     page_title="Flower Explorer",
@@ -11,6 +13,7 @@ st.set_page_config(
 )
 
 st.title("💐 Flower Explorer")
+st.markdown("This dataset includes measurements of the sepal length and width, and petal length and width of 150 iris flowers from three different species. It's commonly used for classification and visualization tasks.")
 
 # Load the dataset
 df = pd.read_csv('https://gist.githubusercontent.com/curran/a08a1080b88344b0c8a7/raw/0e7a9b0a5d22642a06d3d5b9bcbad9890c8ee534/iris.csv')
