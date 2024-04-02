@@ -45,6 +45,10 @@ fig = px.histogram(
 )
 st.plotly_chart(fig)
 
+
+np.random.seed(42)  # For reproducible results
+df['latitude'] = np.random.uniform(-90, 90, size=len(df))
+df['longitude'] = np.random.uniform(-180, 180, size=len(df))
 fig2 = px.scatter_geo(df,
                      lat='latitude',
                      lon='longitude',
