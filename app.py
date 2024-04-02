@@ -44,3 +44,11 @@ fig = px.histogram(
     title="Sepal Length Distribution"
 )
 st.plotly_chart(fig)
+
+fig2 = px.scatter_geo(df,
+                     lat='latitude',
+                     lon='longitude',
+                     color='species',
+                     title="Geographical Distribution of Iris Species")
+
+st.plotly_chart(fig2)
