@@ -4,6 +4,9 @@ import plotly.express as px
 import numpy as np
 np.random.seed(42)
 
+import plotly.express as px
+print("Plotly is installed correctly!")
+
 st.set_page_config(
     page_title="Flower Explorer",
     page_icon="💐",
